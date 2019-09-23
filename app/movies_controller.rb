@@ -48,7 +48,8 @@ def can_find_by_multiple_attributes
   # Search Values:
   # title == "Title"
   # release_date == 2000
-  # director == "Me"
+  # director == "Me"'
+  Movie.all.find({title: "Title", release_date: 2000, director: "Me"})
   __
 end
 
