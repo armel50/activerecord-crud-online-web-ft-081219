@@ -49,7 +49,7 @@ def can_find_by_multiple_attributes
   # title == "Title"
   # release_date == 2000
   # director == "Me"'
-  Movie.all.find(release_date: 2000)
+  Movie.all.find(1)
   __
 end
 
