@@ -49,7 +49,12 @@ def can_find_by_multiple_attributes
 end
 
 def can_find_using_where_clause_and_be_sorted
- Movie.all.map{|el| p el if el.release_date > 2002} 
+ movie = Movie.all.map{|el| p el if el.release_date > 2002}  
+ p ""
+ p ""
+ p "this is the movie #{movie}"
+ p ""
+ p ""
 
 end
 
