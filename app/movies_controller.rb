@@ -53,7 +53,7 @@ def can_find_using_where_clause_and_be_sorted
  movie = Movie.all.map{|el| result << el if el.release_date > 2002}  
  p ""
  p ""
- p "this is the movie #{movie}"
+ p "this is the movie #{result}"
  p ""
  p ""
 
