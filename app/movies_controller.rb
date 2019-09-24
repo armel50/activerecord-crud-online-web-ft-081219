@@ -54,7 +54,8 @@ def can_find_by_multiple_attributes
 end
 
 def can_find_using_where_clause_and_be_sorted
-found= Movie.all.detect{|el| el.title if el.release_date > 2000}
+found= Movie.all.map{|el| el.title if el.release_date > 2000} 
+found.
 end
 
 def can_be_found_updated_and_saved
