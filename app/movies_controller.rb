@@ -80,7 +80,7 @@ def can_update_multiple_items_at_once
   end
  Movie.all.each do |el| 
    el.title = "A Movie" 
-   el.update
+   el.save
  end
 end
 
