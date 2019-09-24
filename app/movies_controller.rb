@@ -55,7 +55,7 @@ end
 
 def can_find_using_where_clause_and_be_sorted
 found= Movie.all.map{|el| el.title if el.release_date > 2000} 
-found.sort_by{|el| el.title}
+found.sort
 end
 
 def can_be_found_updated_and_saved
